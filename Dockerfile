@@ -1,6 +1,6 @@
 FROM ubuntu:noble
 
-MAINTAINER Matt Pays matt.pays@fasthosts.com
+LABEL MAINTAINER="Manuel Merkl manuel.merkl@proton.me"
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -19,5 +19,5 @@ RUN \
   mkdir -p ${MIRRORDIR} && \
   chmod 0777 ${MIRRORDIR}
 
-CMD /debmirror_sync.sh
+CMD ["/bin/bash", "/debmirror_sync.sh"]
 
