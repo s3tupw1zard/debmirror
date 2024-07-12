@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:noble
 
 MAINTAINER Matt Pays matt.pays@fasthosts.com
 
