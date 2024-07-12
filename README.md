@@ -1,4 +1,4 @@
-# ubuntu-16-debmirror
+# ubuntu-24-debmirror
 # debmirror
 
 
