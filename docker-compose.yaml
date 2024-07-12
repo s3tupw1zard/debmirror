@@ -1,5 +1,16 @@
-version: '2'
+name: debmirror
 services:
-  debmirror:
-    build: .
-    image: debmirror
+    debmirror:
+        image: s3tupw1zard/debmirror:latest
+        volumes:
+            - ./repo:/debmirror
+            - ./config:/status
+
+    nginx:
+        image: nginx:latest
+        ports:
+            - "9999:80"
+        volumes:
+            - ./repo:/usr/share/nginx/html
+        restart: always
+        
