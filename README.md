@@ -1,6 +1,4 @@
 # ubuntu-24-debmirror
-# debmirror
-
 
 refactored to use an external config file - 
 modify example.debmirror.conf and put in ./config/debmirror.conf
