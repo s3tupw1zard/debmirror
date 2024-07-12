@@ -12,7 +12,7 @@ ENV \
   DEBUGFILE="debmirror-debug.log"
 
 RUN \
-  apt-get update && apt-get install -o Dpkg::Options::=--force-confdef -y debmirror xz-utils apt-transport-https && \
+  apt-get update && apt-get install -o Dpkg::Options::=--force-confdef -y gnupg debmirror xz-utils apt-transport-https && \
   chmod 0755 /debmirror_sync.sh && \
   mkdir -p ${CONFDIR} && \
   chmod 0777 ${CONFDIR} && \
